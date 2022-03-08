@@ -1,21 +1,18 @@
 	<footer>
-		<p>This is another paragraph ...</p>
 		<section class="menu-area">
 			<div class="container">
-				<div class="align">
-					<div class="row">
-						<section class="logo col text-center">
-							Copyright 2022 - Learn WP
-						</section>
-						<nav class="main-menu col text-end">
-							<?php 
-								wp_nav_menu( array(
-									'theme_location' => 'footer_menu',
-								) );
-							?>
-						</nav>
-					</div>	
-				</div>
+				<div class="row">
+					<div class="copyright col-sm-7 col-4">
+						<p>Copyright 2022 - Learn WP</p>
+					</div>
+					<nav class="footer-menu col-sm-5 col-8 text-end">
+						<?php 
+							wp_nav_menu( array(
+								'theme_location' => 'footer_menu',
+							) );
+						?>
+					</nav>
+				</div>	
 			</div>
 		</section>
 	</footer>
