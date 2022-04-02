@@ -9,14 +9,14 @@
 					<div class="row">
 						<div class="error-404 col-md-9">
 							<header>
-								<h1>Page not found!</h1>
-								<p>Unfortunatelly, the page you are trying to reach doesn't exist.</p>
+								<h1><?php _e( 'Page not found!', 'learnwp' ); ?></h1>
+								<p><?php _e( 'Unfortunatelly, the page you are trying to reach does not exist.', 'learnwp ' ); ?></p>
 							</header>
 							<div class="error">
-								<p>How about doing a search?</p>
+								<p><?php _e( 'How about doing a search?', 'learnwp' ); ?></p>
 								<div class="col-3"><?php get_search_form(); ?> </div>
 								
-								 <?php the_widget( 'WP_Widget_Recent_Posts', array( 'title' => 'Latest Posts', 'number' => 3 ) ); ?> 
+								 <?php the_widget( 'WP_Widget_Recent_Posts', array( 'title' => __('Latest Posts', 'learnwp'), 'number' => 3 ) ); ?> 
 								
 							</div>
 						

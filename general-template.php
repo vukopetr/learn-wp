@@ -27,7 +27,7 @@
 							endwhile;
 							else:
 						?>
-							<p>There are no posts to be displayed!</p>
+							<p><?php _e( 'There are no posts to be displayed!', 'learnwp' ); ?></p>
 						<?php endif; ?>
 					</div>
 					

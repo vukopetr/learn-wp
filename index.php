@@ -19,17 +19,17 @@
 							
 								<div class="row">
 									<div class="pages col-md-6 text-start">
-										<?php next_posts_link( '<< Older posts' ); ?>
+										<?php next_posts_link( __( '<< Older posts', 'learnwp' ) ); ?>
 									</div>
 									<div class="pages col-md-6 text-end">
-										<?php previous_posts_link( 'Newer posts >>' ); ?>
+										<?php previous_posts_link( __( 'Newer posts >>', 'learnwp' ) ); ?>
 									</div>
 								</div>
 							
 							<?php
 								else:
 							?>
-								<p>There are no posts to be displayed!</p>
+								<p><?php _e( 'There are no posts to be displayed!', 'learnwp' ); ?></p>
 							<?php endif; ?>
 						</div>
 						<aside class="sidebar col-md-3 h-100"><?php get_sidebar( 'blog' ); ?></aside>

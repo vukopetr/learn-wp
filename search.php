@@ -4,7 +4,7 @@
 		<div id="main">
 			<div class="container">
 			
-			<h2>Search results for: <?php echo get_search_query(); ?></h2>
+			<h2><?php _e( 'Search results for: ', 'learnwp' ); ?><?php echo get_search_query(); ?></h2>
 			
 			<div class="search col-3"><?php get_search_form(); ?></div>
 			
@@ -22,8 +22,8 @@
 				
 				the_posts_pagination(
 					array(
-						'prev_text' => 	'Prev',
-						'next_text'			=>	'Next'						
+						'prev_text' => 	__( 'Prev', 'learnwp' ),
+						'next_text'	=>	__( 'Next', 'learnwp' )						
 					)
 				);
 				
